@@ -2,8 +2,10 @@
      <div class="layout">
         <template v-for="(item,index) in list">
             <label class="margin-right-10 pointer" :for="radioId+index">
-                <i class="fa fa-dot-circle-o color-primary" v-if="index==check"></i>
-                <i class="fa fa-circle-o color-ccc" v-if="index!=check"></i>
+                <i class="fa fa-dot-circle-o color-primary" v-if="index==check">23424</i>
+                <i class="fa fa-circle-o color-ccc" v-if="index!=check">234234</i>
+                <span>{{item}}</span>
+                <span>{{item}}</span>
                 <span>{{item}}</span>
 
                 <input type="radio" :id="radioId+index" name="radio2" class="none" checked="checked" v-if="index==val" :value="index" @click="checked(index)">
